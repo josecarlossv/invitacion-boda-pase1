@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 300px) and (max-width:1000px) {
+    .carta {
+        display: flex;
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .sobreIzquierda {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 75%;
+        z-index: 2;
+    }
+
+    .sobreIzquierda img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    .sobreDerecha {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: 100%;
+        width: 65%;
+        z-index: 3;
+    }
+
+    .sobreDerecha img {
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .botonCarta {
+        position: absolute;
+        top: 45%;
+        left: 30%;
+        z-index: 4;
+    }
+
+    .botonCarta img {
+        object-fit: cover;
+        width: 100px;
+    }
+}
