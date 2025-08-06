@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-image: url(images/fondoCarta2.png);
 }
 
 @media (min-width: 300px) and (max-width:1000px) {
@@ -50,5 +51,81 @@ body {
     .botonCarta img {
         object-fit: cover;
         width: 100px;
+    }
+
+    /*Estilos Nohemi*/
+
+    .intro{
+    display: flex;
+    justify-items: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    
+    }
+
+    p{
+        font-family:'Tangerine', cursive;
+        font-weight: 400;
+        font-size: 40px;
+    }
+    h3{
+        font-family: "Libertinus Serif", serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+    h4{
+        padding: 0px;
+        margin:0px;
+    }
+    .names{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        font-family: "Playfair Display", serif;
+    
+        font-weight: 400;
+        font-style: italic;
+        font-size:18px;
+        
+    }
+    .novios{
+        font-family: "Rouge Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size:60px;
+    }
+    h2{
+        font-family: "Playfair Display", serif;
+        font-weight: 800;
+        font-size: 40px;
+    }
+    .fecha{
+        display:flex;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    /*LINEA DE EN MEDIO?? 
+    .der{
+        padding-right:15%;
+        border-right: 3px solid black;
+    }*/ 
+    .ceremonia{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-items: center;
+        
+        
+    }
+    #title{
+        font-family: "Great Vibes", cursive;
+        font-weight: 400;
+        font-size: 40px;
+    }
+    .recepcion{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-items: center;
     }
 }
