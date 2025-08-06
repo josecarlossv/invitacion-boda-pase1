@@ -7,8 +7,18 @@ gsap.registerEffect({
     extendTimeline: true,
 });
 
+gsap.registerEffect({
+    name: "fadeIn",
+    effect: (targets, config) => {
+        return gsap.to(targets, { duration: config.duration, opacity: 1 });
+    },
+    defaults: { duration: 2 },
+    extendTimeline: true,
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     const botonCarta = document.querySelector('.botonCarta');
+    const imagenInicial = document.querySelector('.imagenInicial');
 
     botonCarta.addEventListener('click', () => {
         document.body.style.overflow = 'auto';
@@ -21,5 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
             gsap.to(".sobreDerecha", { x: 300, duration: 1.5 });
             gsap.to(".sobreIzquierda", { x: -400, duration: 1.5 });
         }
+
+        gsap.effects.fadeIn(imagenInicial);
+
     });
 });
