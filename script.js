@@ -1,3 +1,4 @@
+
 gsap.registerEffect({
     name: "fade",
     effect: (targets, config) => {
@@ -24,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = 'auto';
         gsap.effects.fade(botonCarta);
 
-        if (screen.width > 737) {
+        if (screen.width > 601) {
             gsap.to(".sobreDerecha", { x: 1000, duration: 2.5 });
             gsap.to(".sobreIzquierda", { x: -1200, duration: 2.5 });
         } else {
@@ -33,6 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         gsap.effects.fadeIn(imagenInicial);
+
+        setTimeout(() => {
+            document.querySelector('main').style.display = 'block';
+        }, 500);
 
     });
 });
