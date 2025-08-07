@@ -130,15 +130,14 @@ body {
 
     .fecha {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         text-align: center;
     }
 
-    /*LINEA DE EN MEDIO?? 
-    .der{
-        padding-right:15%;
-        border-right: 3px solid black;
-    }*/
+    .linea{
+        padding: 0%;
+        margin:0%;
+    }
     .ceremonia {
         display: flex;
         flex-direction: column;
@@ -160,6 +159,13 @@ body {
         flex-direction: column;
         text-align: center;
         justify-items: center;
+    }
+    .segunda-imagen img{
+        padding-top: 1em;;
+        height: 100%;
+        width:100%;
+        filter: grayscale(100%);
+    
     }
 
     button {
@@ -191,11 +197,50 @@ body {
         flex-direction: column;
         align-items: center;
     }
-
+    .division{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .division svg{
+        padding:0%;
+        margin:0%;
+    }
     .it-derecha {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .Imagen-countdown img{
+        padding-top: 1em;;
+        height: 100%;
+        width:100%;
+        filter: grayscale(100%);
+    }
+    .detalles{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .galeria{
+        height: 500px;
+        width: 100%;
+    }
+    .confirmacion{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .ultima-imagen img{
+        padding-top: 1em;;
+        height: 100%;
+        width:100%;
+        filter: grayscale(100%)
     }
 }
 
