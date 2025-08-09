@@ -81,6 +81,7 @@ main {
 
 /*ESTILOS MAIN*/
 
+
 .intro {
     display: flex;
     justify-items: space-evenly;
@@ -88,86 +89,74 @@ main {
     text-align: center;
 }
 
-p {
-    font-family: 'Tangerine', cursive;
-    font-weight: 400;
-    font-size: 40px;
-}
+
+/*ESTILOS ETIQUETAS GLOBALES*/
+
 
 h3 {
     font-family: "Libertinus Serif", serif;
     font-weight: 600;
     font-style: normal;
+    margin: 5%;
+    font-size: 15px;
 }
 
 h4 {
     padding: 0px;
-    margin: 0px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 0%;
+    font-family: "Playfair Display", serif;
+    font-size: 17px;
+    font-weight: 600;
+    font-style: italic;
+    
+}
+h1{
+    margin-bottom:0px;
+    margin-top:0%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
+    font-size: 40px;
+}
+.parrafo {
+   
+    margin-left:5%;
+    margin-right: 5%;;
+    margin-bottom: 2%;
+    font-family: 'Tangerine', cursive;
+    font-weight: 400;
+    font-size: 35px;
 }
 
 .names {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    font-family: "Playfair Display", serif;
-
-    font-weight: 400;
-    font-style: italic;
-    font-size: 18px;
-
+    justify-content: space-between;
+    padding:0px;
 }
 
 .novios {
     font-family: "Rouge Script", cursive;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
-    font-size: 60px;
-}
-
-h2 {
-    font-family: "Playfair Display", serif;
-    font-weight: 800;
-    font-size: 40px;
-}
-
-.fecha {
-    display: flex;
-    justify-content: space-between;
+    font-size: 50px;
+    margin-top: 15%;
+    margin-bottom: 15%;
     text-align: center;
 }
-
-.linea {
-    padding: 0%;
-    margin: 0%;
-}
-
-.ceremonia {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-items: center;
-}
-
-#title {
+.title {
     font-family: "Great Vibes", cursive;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 55px;
     text-align: center;
-}
-
-.recepcion {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-items: center;
-}
-
-.segunda-imagen img {
-    padding-top: 1em;
-    height: 100%;
-    width: 100%;
-    filter: grayscale(100%);
-
+    margin-top:5%;
+    margin-bottom: 5%;
 }
 
 button {
@@ -176,7 +165,7 @@ button {
     border-radius: 20px;
     padding: 5px;
     font-weight: 400;
-    width: 120px;
+    width: 140px;
     height: 40px;
     font-size: large;
     font-family: 'Playfair Display", serif';
@@ -189,33 +178,194 @@ button:hover {
     background-color: rgb(51, 53, 53);
 }
 
+/*ESTILOS SECCIÓN FECHA*/
+
+.fecha {
+    display: flex;
+    justify-content:space-evenly;
+    text-align: center;
+    margin-top:5%;
+    margin-bottom: 10%;
+    padding:0px;
+}
+.der{
+    margin-left:0px;
+    padding:0px;
+    margin-top:6%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.nov{
+    font-size: 23px;
+    margin-top:5%;
+    margin-left:0px;
+    margin-bottom: 0px;;
+}
+
+.dia{
+    font-size: 60px;
+    margin-top:0%;
+    margin-bottom:2%;
+}
+.year{
+    font-size: 25px;
+    margin-top:5%
+}
+
+.linea {
+    padding: 0%;
+    margin: 1%;
+    width: 2px;
+    background-color: black;
+}
+.izq{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 15%;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 5%;
+}
+.hora{
+    font-size: 50px;
+    margin-bottom: 1%;
+    margin-top:50%;
+}
+
+/*ESTILOS SECCIÓN UBICACIONES*/
+
+
+.ceremonia {
+   
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    margin:5%;
+}
+.ceremonia img{
+    width: 200px;
+    margin: 0px;
+
+}
+
+.lugar{
+    font-size: 23px;
+    margin-top: 1%;
+}
+.time{
+    font-size: 20px;
+}
+.ubi{
+    font-family: 'Tangerine', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+
+.recepcion {
+    text-align: center;
+    justify-items: center;
+}
+
+.recepcion img{
+    width: 150px;
+    margin-top:10%;
+    margin-bottom: 5%;
+}
+.segunda-imagen img {
+    margin-top: 1em;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+
+}
+
+/*ESTILOS SECCIÓN ITINERARIO*/
+
 .itinerario {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin:5%;
 }
 
 .it-izquierda {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 5%;
+    margin-left:3%
 }
 
-.division {
-    display: flex;
-    flex-direction: column;
 
-}
-
-.division svg {
-    padding: 0%;
-    margin: 0%;
+.vertical {
+    margin: 1%;
+    width: 2px;
+    background-color: black;
+    height: 100%;
 }
 
 .it-derecha {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin-left: 5%;
 }
+.C1, .C2, .C3, .C4, .C5, .C6, .C7, .C8{
+    width:100px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.division {
+    position: relative;
+}
+
+.horizontal-1{
+    top:70px;
+    left: -35px;
+    background-color: black;
+    width: 70px; 
+    height: 1.5px;
+    position: absolute;
+    z-index: 2;
+}
+.horizontal-2{
+    width:70px;
+    background-color: black;
+    height:1.5px;
+    position:absolute;
+    z-index: 2;
+    top:220px;
+    left:-35px;
+}
+.horizontal-3{
+    width:70px;
+    background-color: black;
+    height:1.5px;
+    position:absolute;
+    z-index: 2;
+    top:370px;
+    left:-35px;
+}
+.horizontal-4{
+    width:70px;
+    background-color: black;
+    height:1.5px;
+    position:absolute;
+    z-index: 2;
+    top:520px;
+    left:-35px;
+}
+
+/*ESTILO SECCIÓN COUNTDOWN*/ 
 
 .Imagen-countdown img {
     padding-top: 1em;
@@ -224,6 +374,8 @@ button:hover {
     filter: grayscale(100%);
 }
 
+/*ESTILOS SECCIÓN DETALLES (VESTIMENTA, REGALOS)*/
+
 .detalles {
     display: flex;
     justify-content: center;
@@ -231,20 +383,81 @@ button:hover {
     align-items: center;
     text-align: center;
 }
+.title-2{
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-size: 45px;
+    text-align: center;
+    margin-top:10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+   
+}
+.vestimenta img{
+    margin-top:2%;
+    width: 300px;
+    margin-bottom: 5%;
+}
+.vestimenta p{
+    font-family: 'Tangerine', cursive;
+    font-weight: 400;
+    font-size: 35px;
+    margin-bottom: 0px;
+    margin-top: 1%;
+    margin-left:5%;
+    margin-right: 5%;
+}
+
+.regalos{
+    margin-top:10%;
+    margin-bottom: 10%;
+    margin-left:5%;
+    margin-right: 5%;
+}
+
+.cuenta {
+   margin-top: 10%; 
+   margin-bottom: 5%;
+}
+.cuenta h3, .enfasis{
+    font-size: 20px ;  
+    margin:2%;
+
+}
+.cuenta p{
+    font-family: "Great Vibes", cursive;
+    font-size: 25px;
+    margin:2%;
+}
+
+/*ESTILOS SECCIÓN GALERIA*/
 
 .galeria {
     height: 500px;
     width: 100%;
 }
 
+/*ESTILOS SECCIÓN CONFIRMACIÓN */
+
 .confirmacion {
-    display: flex;
-    justify-content: center;
+    display:flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
 }
-
+.confirmacion button{
+    width:200px;
+    font-size: small;
+    margin-bottom: 15%;
+}
+.confirmacion p{
+    font-family: 'Tangerine', cursive;
+    font-weight: 400;
+    font-size: 35px;
+    margin-top:2%;
+}
 .ultima-imagen img {
     padding-top: 1em;
     height: 100%;
