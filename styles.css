@@ -7,6 +7,7 @@ body {
 
 main {
     display: none;
+    flex-direction: column;
 }
 
 /* ESTILOS PARA LA CARTA DISPOSITIVO MÓVIL (PANTALLA INICIAL) */
@@ -20,7 +21,7 @@ main {
 
 }
 
-.imagenInicial {
+.carta-imagen-inicial {
     position: absolute;
     overflow: hidden;
     z-index: 1;
@@ -31,14 +32,14 @@ main {
     opacity: 0;
 }
 
-.imagenInicial img {
+.carta-imagen-inicial img {
     object-fit: cover;
     width: 100%;
     height: 100%;
     filter: grayscale(100%);
 }
 
-.sobreIzquierda {
+.carta-sobre-izquierda {
     position: absolute;
     z-index: 3;
     top: 0px;
@@ -47,13 +48,13 @@ main {
     width: 75%;
 }
 
-.sobreIzquierda img {
+.carta-sobre-izquierda img {
     object-fit: cover;
     height: 100%;
     width: 100%;
 }
 
-.sobreDerecha {
+.carta-sobre-derecha {
     position: absolute;
     z-index: 4;
     top: 0px;
@@ -62,19 +63,19 @@ main {
     width: 65%;
 }
 
-.sobreDerecha img {
+.carta-sobre-derecha img {
     object-fit: cover;
     height: 100%;
 }
 
-.botonCarta {
+.carta-boton {
     position: absolute;
     z-index: 5;
     top: 45%;
     left: 30%;
 }
 
-.botonCarta img {
+.carta-boton img {
     object-fit: cover;
     width: 100px;
 }
@@ -110,23 +111,26 @@ h4 {
     font-size: 17px;
     font-weight: 600;
     font-style: italic;
-    
+
 }
-h1{
-    margin-bottom:0px;
-    margin-top:0%;
+
+h1 {
+    margin-bottom: 0px;
+    margin-top: 0%;
     margin-right: 2%;
     margin-left: 2%;
 }
+
 h2 {
     font-family: "Playfair Display", serif;
     font-weight: 800;
     font-size: 40px;
 }
+
 .parrafo {
-   
-    margin-left:5%;
-    margin-right: 5%;;
+    margin-left: 5%;
+    margin-right: 5%;
+    ;
     margin-bottom: 2%;
     font-family: 'Tangerine', cursive;
     font-weight: 400;
@@ -138,7 +142,7 @@ h2 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     justify-content: space-between;
-    padding:0px;
+    padding: 0px;
 }
 
 .novios {
@@ -150,12 +154,13 @@ h2 {
     margin-bottom: 15%;
     text-align: center;
 }
+
 .title {
     font-family: "Great Vibes", cursive;
     font-weight: 400;
     font-size: 55px;
     text-align: center;
-    margin-top:5%;
+    margin-top: 5%;
     margin-bottom: 5%;
 }
 
@@ -182,35 +187,39 @@ button:hover {
 
 .fecha {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     text-align: center;
-    margin-top:5%;
+    margin-top: 5%;
     margin-bottom: 10%;
-    padding:0px;
+    padding: 0px;
 }
-.der{
-    margin-left:0px;
-    padding:0px;
-    margin-top:6%;
-    display:flex;
+
+.der {
+    margin-left: 0px;
+    padding: 0px;
+    margin-top: 6%;
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
-.nov{
+
+.nov {
     font-size: 23px;
-    margin-top:5%;
-    margin-left:0px;
-    margin-bottom: 0px;;
+    margin-top: 5%;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    ;
 }
 
-.dia{
+.dia {
     font-size: 60px;
-    margin-top:0%;
-    margin-bottom:2%;
+    margin-top: 0%;
+    margin-bottom: 2%;
 }
-.year{
+
+.year {
     font-size: 25px;
-    margin-top:5%
+    margin-top: 5%
 }
 
 .linea {
@@ -219,8 +228,9 @@ button:hover {
     width: 2px;
     background-color: black;
 }
-.izq{
-    display:flex;
+
+.izq {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 15%;
@@ -228,36 +238,39 @@ button:hover {
     margin-left: 0px;
     margin-right: 5%;
 }
-.hora{
+
+.hora {
     font-size: 50px;
     margin-bottom: 1%;
-    margin-top:50%;
+    margin-top: 50%;
 }
 
 /*ESTILOS SECCIÓN UBICACIONES*/
 
 
 .ceremonia {
-   
     text-align: center;
     justify-items: center;
     align-items: center;
-    margin:5%;
+    margin: 5%;
 }
-.ceremonia img{
+
+.ceremonia img {
     width: 200px;
     margin: 0px;
 
 }
 
-.lugar{
+.lugar {
     font-size: 23px;
     margin-top: 1%;
 }
-.time{
+
+.time {
     font-size: 20px;
 }
-.ubi{
+
+.ubi {
     font-family: 'Tangerine', cursive;
     font-weight: 400;
     font-size: 20px;
@@ -269,11 +282,12 @@ button:hover {
     justify-items: center;
 }
 
-.recepcion img{
+.recepcion img {
     width: 150px;
-    margin-top:10%;
+    margin-top: 10%;
     margin-bottom: 5%;
 }
+
 .segunda-imagen img {
     margin-top: 1em;
     height: 100%;
@@ -288,7 +302,7 @@ button:hover {
 .itinerario {
     display: flex;
     justify-content: space-between;
-    margin:5%;
+    margin: 5%;
 }
 
 .it-izquierda {
@@ -296,7 +310,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     margin-right: 5%;
-    margin-left:3%
+    margin-left: 3%
 }
 
 
@@ -314,8 +328,16 @@ button:hover {
     justify-content: center;
     margin-left: 5%;
 }
-.C1, .C2, .C3, .C4, .C5, .C6, .C7, .C8{
-    width:100px;
+
+.C1,
+.C2,
+.C3,
+.C4,
+.C5,
+.C6,
+.C7,
+.C8 {
+    width: 100px;
     height: 150px;
     justify-content: center;
     align-items: center;
@@ -328,50 +350,109 @@ button:hover {
     position: relative;
 }
 
-.horizontal-1{
-    top:70px;
+.horizontal-1 {
+    top: 70px;
     left: -35px;
     background-color: black;
-    width: 70px; 
+    width: 70px;
     height: 1.5px;
     position: absolute;
     z-index: 2;
 }
-.horizontal-2{
-    width:70px;
+
+.horizontal-2 {
+    width: 70px;
     background-color: black;
-    height:1.5px;
-    position:absolute;
+    height: 1.5px;
+    position: absolute;
     z-index: 2;
-    top:220px;
-    left:-35px;
-}
-.horizontal-3{
-    width:70px;
-    background-color: black;
-    height:1.5px;
-    position:absolute;
-    z-index: 2;
-    top:370px;
-    left:-35px;
-}
-.horizontal-4{
-    width:70px;
-    background-color: black;
-    height:1.5px;
-    position:absolute;
-    z-index: 2;
-    top:520px;
-    left:-35px;
+    top: 220px;
+    left: -35px;
 }
 
-/*ESTILO SECCIÓN COUNTDOWN*/ 
+.horizontal-3 {
+    width: 70px;
+    background-color: black;
+    height: 1.5px;
+    position: absolute;
+    z-index: 2;
+    top: 370px;
+    left: -35px;
+}
 
-.Imagen-countdown img {
-    padding-top: 1em;
-    height: 100%;
+.horizontal-4 {
+    width: 70px;
+    background-color: black;
+    height: 1.5px;
+    position: absolute;
+    z-index: 2;
+    top: 520px;
+    left: -35px;
+}
+
+/*ESTILO SECCIÓN COUNTDOWN*/
+
+.cuenta-regresiva {
+    position: relative;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+}
+
+.cuenta-regresiva-leyenda {
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+    top: 20px;
+    font-family: "Rouge Script", cursive;
+    font-weight: 500;
+    font-size: 55px;
+}
+
+.cuenta-regresiva-datos {
+    color: white;
+    position: absolute;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 20px, 20px;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contador-dias,
+.contador-horas,
+.contador-minutos,
+.contador-segundos {
+    font-size: 30px;
+}
+
+.contador-dias-leyenda,
+.contador-horas-leyenda,
+.contador-minutos-leyenda,
+.contador-segundos-leyenda {
+    font-size: 10px;
+}
+
+.cuenta-regresiva-imagen {
+    width: 100%;
+    overflow: hidden;
+}
+
+.cuenta-regresiva-imagen img {
     width: 100%;
     filter: grayscale(100%);
+    scale: 1.2;
 }
 
 /*ESTILOS SECCIÓN DETALLES (VESTIMENTA, REGALOS)*/
@@ -383,52 +464,58 @@ button:hover {
     align-items: center;
     text-align: center;
 }
-.title-2{
+
+.title-2 {
     font-family: "Great Vibes", cursive;
     font-weight: 400;
     font-size: 45px;
     text-align: center;
-    margin-top:10%;
+    margin-top: 10%;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 2%;
-   
+
 }
-.vestimenta img{
-    margin-top:2%;
+
+.vestimenta img {
+    margin-top: 2%;
     width: 300px;
     margin-bottom: 5%;
 }
-.vestimenta p{
+
+.vestimenta p {
     font-family: 'Tangerine', cursive;
     font-weight: 400;
     font-size: 35px;
     margin-bottom: 0px;
     margin-top: 1%;
-    margin-left:5%;
+    margin-left: 5%;
     margin-right: 5%;
 }
 
-.regalos{
-    margin-top:10%;
+.regalos {
+    margin-top: 10%;
     margin-bottom: 10%;
-    margin-left:5%;
+    margin-left: 5%;
     margin-right: 5%;
 }
 
 .cuenta {
-   margin-top: 10%; 
-   margin-bottom: 5%;
+    margin-top: 10%;
+    margin-bottom: 5%;
 }
-.cuenta h3, .enfasis{
-    font-size: 20px ;  
-    margin:2%;
+
+.cuenta h3,
+.enfasis {
+    font-size: 20px;
+    margin: 2%;
 
 }
-.cuenta p{
+
+.cuenta p {
     font-family: "Great Vibes", cursive;
     font-size: 25px;
-    margin:2%;
+    margin: 2%;
 }
 
 /*ESTILOS SECCIÓN GALERIA*/
@@ -441,23 +528,26 @@ button:hover {
 /*ESTILOS SECCIÓN CONFIRMACIÓN */
 
 .confirmacion {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.confirmacion button{
-    width:200px;
+
+.confirmacion button {
+    width: 200px;
     font-size: small;
     margin-bottom: 15%;
 }
-.confirmacion p{
+
+.confirmacion p {
     font-family: 'Tangerine', cursive;
     font-weight: 400;
     font-size: 35px;
-    margin-top:2%;
+    margin-top: 2%;
 }
+
 .ultima-imagen img {
     padding-top: 1em;
     height: 100%;
@@ -479,7 +569,7 @@ button:hover {
 
     }
 
-    .imagenInicial {
+    .carta-imagen-inicial {
         position: absolute;
         overflow: hidden;
         z-index: 1;
@@ -490,14 +580,14 @@ button:hover {
         opacity: 0;
     }
 
-    .imagenInicial img {
+    .carta-imagen-inicial img {
         object-fit: contain;
         width: 100%;
         height: 100%;
         filter: grayscale(100%);
     }
 
-    .sobreIzquierda {
+    .carta-sobre-izquierda {
         position: absolute;
         top: 0px;
         left: 0px;
@@ -506,13 +596,13 @@ button:hover {
         z-index: 2;
     }
 
-    .sobreIzquierda img {
+    .carta-sobre-izquierda img {
         object-fit: cover;
         height: 100%;
         width: 100%;
     }
 
-    .sobreDerecha {
+    .carta-sobre-derecha {
         position: absolute;
         top: 0px;
         right: 0px;
@@ -521,20 +611,20 @@ button:hover {
         z-index: 3;
     }
 
-    .sobreDerecha img {
+    .carta-sobre-derecha img {
         object-fit: cover;
         height: 100%;
         width: 100%;
     }
 
-    .botonCarta {
+    .carta-boton {
         position: absolute;
         top: 45%;
         left: 37%;
         z-index: 4;
     }
 
-    .botonCarta img {
+    .carta-boton img {
         object-fit: cover;
         width: 70px;
     }
