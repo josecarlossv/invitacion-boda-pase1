@@ -4,10 +4,26 @@ body {
     overflow: hidden;
     background-image: url(images/fondoCarta2.png);
 }
+/*FONTS */
+@font-face {
+    font-family: "Serif-parrafo";
+    src: url(./fonts/SerlioLH.ttf) ;
+}
+@font-face {
+    font-family: "serif-parrafo-italic";
+    src: url(./fonts/Bodoni-SvtyTwo-ITC-TT-BookIta.ttf);
+}
+@font-face{
+    font-family: "cursiva";
+    src: url(./fonts/H4cjBXOCl9bbnla_nHIq6qu_oqM\ \(1\).woff2);
+}
 
+
+/*ESTILOS MAIN*/
 main {
     display: none;
     flex-direction: column;
+
 }
 
 /* ESTILOS PARA LA CARTA DISPOSITIVO MÓVIL (PANTALLA INICIAL) */
@@ -95,22 +111,29 @@ main {
 
 
 h3 {
-    font-family: "Libertinus Serif", serif;
+    /*font-family: "Libertinus Serif", serif;
+    font-weight: 600;
+    font-style: normal;*/
+    font-family: "serif-parrafo", serif;
+    margin: 5%;
+    font-size: 20px;
     font-weight: 600;
     font-style: normal;
-    margin: 5%;
-    font-size: 15px;
-}
+    letter-spacing: 1.5px;}
 
 h4 {
     padding: 0px;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 0%;
-    font-family: "Playfair Display", serif;
+    /*font-family: "Playfair Display", serif;
     font-size: 17px;
     font-weight: 600;
-    font-style: italic;
+    font-style: italic;*/
+    font-family: "serif-parrafo-italic", serif;
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: 1.5px;
 
 }
 
@@ -130,11 +153,13 @@ h2 {
 .parrafo {
     margin-left: 5%;
     margin-right: 5%;
-    ;
     margin-bottom: 2%;
-    font-family: 'Tangerine', cursive;
+    /*font-family: "Libertinus Serif", serif;
     font-weight: 400;
-    font-size: 35px;
+    font-style: italic;*/
+    font-family: "serif-parrafo-italic", serif;
+    font-size: 20px;
+    letter-spacing: 2px;
 }
 
 .names {
@@ -146,20 +171,19 @@ h2 {
 }
 
 .novios {
-    font-family: "Rouge Script", cursive;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 50px;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 400;
+    font-size: 40px;
     margin-top: 15%;
     margin-bottom: 15%;
     text-align: center;
 }
 
 .title {
-    font-family: "Great Vibes", cursive;
-    font-weight: 400;
-    font-size: 55px;
+    font-family: "Cormorant", serif;
     text-align: center;
+    font-size: 35PX;
+    letter-spacing: 3.5px;
     margin-top: 5%;
     margin-bottom: 5%;
 }
@@ -194,7 +218,7 @@ button:hover {
     padding: 0px;
 }
 
-.der {
+.fecha-derecha {
     margin-left: 0px;
     padding: 0px;
     margin-top: 6%;
@@ -203,7 +227,7 @@ button:hover {
     justify-content: space-evenly;
 }
 
-.nov {
+.fecha-derecha-mes {
     font-size: 23px;
     margin-top: 5%;
     margin-left: 0px;
@@ -211,25 +235,25 @@ button:hover {
     ;
 }
 
-.dia {
+.fecha-derecha-dia {
     font-size: 60px;
     margin-top: 0%;
     margin-bottom: 2%;
 }
 
-.year {
+.fecha-derecha-año {
     font-size: 25px;
     margin-top: 5%
 }
 
-.linea {
+.fecha-division {
     padding: 0%;
     margin: 1%;
     width: 2px;
     background-color: black;
 }
 
-.izq {
+.fecha-izquierda {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -239,7 +263,7 @@ button:hover {
     margin-right: 5%;
 }
 
-.hora {
+.fecha-izquierda-hora {
     font-size: 50px;
     margin-bottom: 1%;
     margin-top: 50%;
@@ -248,41 +272,43 @@ button:hover {
 /*ESTILOS SECCIÓN UBICACIONES*/
 
 
-.ceremonia {
+.ubicaciones-ceremonia {
     text-align: center;
     justify-items: center;
     align-items: center;
     margin: 5%;
 }
 
-.ceremonia img {
+.ubicaciones-ceremonia img {
     width: 200px;
     margin: 0px;
 
 }
 
-.lugar {
+.ubicaciones-ceremonia-lugar, .ubicaciones-recepcion-lugar {
     font-size: 23px;
     margin-top: 1%;
 }
 
-.time {
+.ubicaciones-ceremonia-hora, .ubicaciones-recepcion-hora{
     font-size: 20px;
 }
 
-.ubi {
-    font-family: 'Tangerine', cursive;
-    font-weight: 400;
-    font-size: 20px;
+.ubicaciones-ceremonia-direccion, .ubicaciones-recepcion-direccion  {
+    font-family: "serif-parrafo-italic", serif;
+    font-size: 15px;
+    letter-spacing: 2px;
     margin-bottom: 2%;
+    margin-left:5%;
+    margin-right: 5%;
 }
 
-.recepcion {
+.ubicaciones-recepcion {
     text-align: center;
     justify-items: center;
 }
 
-.recepcion img {
+.ubicaciones-recepcion img {
     width: 150px;
     margin-top: 10%;
     margin-bottom: 5%;
@@ -305,7 +331,7 @@ button:hover {
     margin: 5%;
 }
 
-.it-izquierda {
+.itinerario-derecha{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -314,14 +340,7 @@ button:hover {
 }
 
 
-.vertical {
-    margin: 1%;
-    width: 2px;
-    background-color: black;
-    height: 100%;
-}
-
-.it-derecha {
+.itinerario-izquierda {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -329,14 +348,14 @@ button:hover {
     margin-left: 5%;
 }
 
-.C1,
-.C2,
-.C3,
-.C4,
-.C5,
-.C6,
-.C7,
-.C8 {
+.itinerario-izquierda-C1,
+.itinerario-izquierda-C2,
+.itinerario-izquierda-C3,
+.itinerario-izquierda-C4,
+.itinerario-derecha-C5,
+.itinerario-derecha-C6,
+.itinerario-derecha-C7,
+.itinerario-derecha-C8 {
     width: 100px;
     height: 150px;
     justify-content: center;
@@ -346,11 +365,16 @@ button:hover {
     flex-direction: column;
 }
 
-.division {
+.itinerario-division {
     position: relative;
 }
-
-.horizontal-1 {
+.itinerario-division-vertical {
+    margin: 1%;
+    width: 2px;
+    background-color: black;
+    height: 100%;
+}
+.itinerario-division-horizontal-1 {
     top: 70px;
     left: -35px;
     background-color: black;
@@ -360,7 +384,7 @@ button:hover {
     z-index: 2;
 }
 
-.horizontal-2 {
+.itinerario-division-horizontal-2 {
     width: 70px;
     background-color: black;
     height: 1.5px;
@@ -370,7 +394,7 @@ button:hover {
     left: -35px;
 }
 
-.horizontal-3 {
+.itinerario-division-horizontal-3 {
     width: 70px;
     background-color: black;
     height: 1.5px;
@@ -380,7 +404,7 @@ button:hover {
     left: -35px;
 }
 
-.horizontal-4 {
+.itinerario-division-horizontal-4 {
     width: 70px;
     background-color: black;
     height: 1.5px;
@@ -420,10 +444,12 @@ button:hover {
     z-index: 2;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 20px, 20px;
+    grid-template-rows: auto;
     justify-items: center;
     justify-content: center;
     align-items: center;
+    row-gap: 1% ;
+    column-gap: 1%;
     width: 90%;
     bottom: 3%;
     left: 50%;
@@ -466,9 +492,10 @@ button:hover {
 }
 
 .title-2 {
-    font-family: "Great Vibes", cursive;
-    font-weight: 400;
-    font-size: 45px;
+    font-family: "Cormorant", serif;
+    text-align: center;
+    font-size: 35PX;
+    letter-spacing: 3.5px;
     text-align: center;
     margin-top: 10%;
     margin-left: 5%;
@@ -477,44 +504,57 @@ button:hover {
 
 }
 
-.vestimenta img {
+.detalles-vestimenta img {
     margin-top: 2%;
     width: 300px;
     margin-bottom: 5%;
 }
 
-.vestimenta p {
-    font-family: 'Tangerine', cursive;
+.detalles-vestimenta p {
+    font-family: "serif-parrafo-italic", serif;
     font-weight: 400;
-    font-size: 35px;
+    font-style: italic;
+    letter-spacing: 2px;;
+    font-size: 20px;
     margin-bottom: 0px;
     margin-top: 1%;
     margin-left: 5%;
     margin-right: 5%;
 }
 
-.regalos {
+.detalles-regalos {
     margin-top: 10%;
     margin-bottom: 10%;
     margin-left: 5%;
     margin-right: 5%;
 }
 
-.cuenta {
+
+
+.detalles-regalos-cuenta {
     margin-top: 10%;
     margin-bottom: 5%;
 }
 
-.cuenta h3,
-.enfasis {
+.detalles-regalos-parrafo{
     font-size: 20px;
-    margin: 2%;
+    margin-bottom: 5%;
+    letter-spacing: 2.5PX;
+    margin-left: 2%;
+    margin-right: 2%;
 
 }
-
-.cuenta p {
-    font-family: "Great Vibes", cursive;
+.enfasis{
     font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.detalles-regalos-cuenta p {
+    font-family: "serif-parrafo-italic", serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 18px;
+    letter-spacing: 1.5px;
     margin: 2%;
 }
 
@@ -542,10 +582,12 @@ button:hover {
 }
 
 .confirmacion p {
-    font-family: 'Tangerine', cursive;
-    font-weight: 400;
-    font-size: 35px;
-    margin-top: 2%;
+    font-family: "serif-parrafo-italic", serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin: 2%;
+
 }
 
 .ultima-imagen img {
@@ -628,4 +670,5 @@ button:hover {
         object-fit: cover;
         width: 70px;
     }
+    
 }
