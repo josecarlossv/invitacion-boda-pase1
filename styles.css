@@ -111,9 +111,7 @@ main {
 
 
 h3 {
-    /*font-family: "Libertinus Serif", serif;
-    font-weight: 600;
-    font-style: normal;*/
+    
     font-family: "serif-parrafo", serif;
     margin: 5%;
     font-size: 20px;
@@ -126,10 +124,6 @@ h4 {
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 0%;
-    /*font-family: "Playfair Display", serif;
-    font-size: 17px;
-    font-weight: 600;
-    font-style: italic;*/
     font-family: "serif-parrafo-italic", serif;
     font-size: 18px;
     font-weight: 200;
@@ -154,9 +148,6 @@ h2 {
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 2%;
-    /*font-family: "Libertinus Serif", serif;
-    font-weight: 400;
-    font-style: italic;*/
     font-family: "serif-parrafo-italic", serif;
     font-size: 20px;
     letter-spacing: 2px;
@@ -170,13 +161,12 @@ h2 {
     padding: 0px;
 }
 
-.novios {
-    font-family: "Gwendolyn", cursive;
-    font-weight: 400;
-    font-size: 40px;
-    margin-top: 15%;
-    margin-bottom: 15%;
-    text-align: center;
+.novios img{
+    width: 90%;
+    margin-top:10%;
+    margin-right: 5%;
+    margin-left: 5%;
+   
 }
 
 .title {
@@ -442,18 +432,58 @@ button:hover {
     color: white;
     position: absolute;
     z-index: 2;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
-    row-gap: 1% ;
-    column-gap: 1%;
     width: 90%;
-    bottom: 3%;
+    bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
+}
+.contador-dias{
+    position: absolute;
+    z-index:2;
+    bottom:8%;
+    left:20%;
+}
+.contador-dias-leyenda{
+    position: absolute;
+    z-index:2;
+    top:1%;
+    left:24.5%;
+}
+.contador-horas{
+    position: absolute;
+    z-index:2;
+    bottom:8%;
+    left:39.5%
+}
+.contador-horas-leyenda{
+    position: absolute;
+    z-index:2;
+    top:1%;
+    left:40%;
+}
+.contador-minutos{
+    position: absolute;
+    z-index:2;
+    bottom:8%;
+    right:32%
+}
+.contador-minutos-leyenda{
+    position: absolute;
+    z-index:2;
+    top:1%;
+    right:35.5%;
+}
+.contador-segundos{
+    position: absolute;
+    z-index:2;
+    bottom:10%;
+    right:22%;
+}
+.contador-segundos-leyenda{
+    position: absolute;
+    z-index:2;
+    top:1%;
+    right:20%;
 }
 
 .contador-dias,
@@ -467,7 +497,7 @@ button:hover {
 .contador-horas-leyenda,
 .contador-minutos-leyenda,
 .contador-segundos-leyenda {
-    font-size: 10px;
+    font-size: 8px;
 }
 
 .cuenta-regresiva-imagen {
@@ -670,5 +700,5 @@ button:hover {
         object-fit: cover;
         width: 70px;
     }
-    
+
 }

@@ -63,21 +63,21 @@ let actualizarContador = setInterval(() => {
     let segundos = Math.floor((distancia % (1000 * 60)) / 1000);
 
     if (dias.toString().length < 2) {
-        document.querySelector(".contador-dias").innerHTML = "0" + dias + ":";
+        document.querySelector(".contador-dias").innerHTML = "0" + dias + " :";
     } else {
-        document.querySelector(".contador-dias").innerHTML = dias + ":";
+        document.querySelector(".contador-dias").innerHTML = dias + " :";
     }
 
     if (horas.toString().length < 2) {
-        document.querySelector(".contador-horas").innerHTML = "0" + horas + ":";
+        document.querySelector(".contador-horas").innerHTML = "0" + horas + " :";
     } else {
-        document.querySelector(".contador-horas").innerHTML = horas + ":";
+        document.querySelector(".contador-horas").innerHTML = horas + " :";
     }
 
     if (minutos.toString().length < 2) {
-        document.querySelector(".contador-minutos").innerHTML = "0" + minutos + ":";
+        document.querySelector(".contador-minutos").innerHTML = "0" + minutos + " :";
     } else {
-        document.querySelector(".contador-minutos").innerHTML = minutos + ":";
+        document.querySelector(".contador-minutos").innerHTML = minutos + " :";
     }
 
     if (segundos.toString().length < 2) {
