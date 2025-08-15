@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
 </head>
 
 <body>
@@ -39,7 +40,7 @@
                 alegría de nuestra
                 unión.
             </p>
-            <h3>Con la bendición de Dios y  de nuestros padres:</h3>
+            <h3>CON LA BENDICIÓN DE DIOS Y DE NUESTROS PADRES:</h3>
             <div class="names">
                 <h4>Karina Espinoza Romero</h4>
                 <h4>María Idalia Cota Soto</h4>
@@ -192,10 +193,43 @@
                     <button>Accede</button>
                 </a>
             </div>
-        </section>-
-        <section class="galeria">
-            <h2 class="title">GALERÍA</h2>
         </section>
+        <div class="swiper mySwiper">
+            <h2 class="title">Galería</h2>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./fotos/galeria01.jpg" alt="imagen 1">
+                </div>
+                <!--
+                <div class="swiper-slide">
+                    <img src="./fotos/galeria02.jpg" alt="imagen 2">
+                </div>
+                -->
+                <div class="swiper-slide">
+                    <img src="./fotos/galeria03.jpg" alt="imagen 3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./fotos/galeria04.jpg" alt="imagen 4">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./fotos/galeria05.jpg" alt="imagen 5">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./fotos/galeria06.jpg" alt="imagen 6">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./fotos/galeria07.jpg" alt="imagen 7">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./fotos/galeria08.jpg" alt="imagen 8">
+                </div>
+            </div>
+            <!--
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            -->
+            <div class="swiper-pagination"></div>
+        </div>
         <seccion class="confirmacion">
             <h2 class="title">CONFIRMACIÓN</h2>
             <h3>Hemos reservado para usted un</h3>
@@ -203,10 +237,23 @@
             <P> Agradecemos confirmar su asistencia antes del 5 de noviembre
                 en el siguiente enlace:
             </P>
+            <!--
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfZQNOcUFpOFRpoi-n4vRzs5A8XMCrWE3l49xdaUI691cVxww/viewform?pli=1"
                 template="_blank">
                 <button>CONFIRMAR ASISTENCIA</button>
             </a>
+            -->
+            <form class="confirmacion-formulario" method="post">
+                <label for="nombre">NOMBRE:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre...">
+                <label for="input-confirmacion">¿PODRÁS ASISTIR?</label>
+                <select name="input-confirmacion" id="input-confirmacion">
+                    <option value="si">Si, asistiré</option>
+                    <option value="no">No, lo siento</option>
+                </select>
+
+
+            </form>
             <h3 class="enfasis">NO NIÑOS</h3>
             <P>Aunque apreciamos a sus pequeños, hemos decidido celebrar este
                 momento sin niños. ¡Agradecemos su comprensión!
@@ -220,6 +267,7 @@
 
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
 
 </body>

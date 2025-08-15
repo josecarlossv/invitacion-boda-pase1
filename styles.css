@@ -3,6 +3,7 @@ body {
     padding: 0;
     overflow: hidden;
     background-image: url(images/fondoCarta2.png);
+
 }
 /*FONTS */
 @font-face {
@@ -590,10 +591,90 @@ button:hover {
 
 /*ESTILOS SECCIÓN GALERIA*/
 
-.galeria {
-    height: 500px;
-    width: 100%;
+.mySwiper {
+    width: 95%;
+    height: 95vh;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
+
+/* Wrapper de slides */
+.swiper-wrapper {
+    display: flex;
+    flex: 1;
+    align-items: stretch;
+}
+
+/* Slide individual */
+.swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide img {
+    position: absolute;
+    filter: grayscale(100%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    min-height: 0;
+}
+
+/* Botones básicos */
+/*
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    z-index: 10;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+*/
+
+/* Paginación básica */
+.swiper-pagination {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.swiper-pagination-bullet {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background: gray;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+    background: black;
+}
+
 
 /*ESTILOS SECCIÓN CONFIRMACIÓN */
 
@@ -603,6 +684,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 60px;
 }
 
 .confirmacion button {
