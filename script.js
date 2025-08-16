@@ -109,3 +109,22 @@ var swiper = new Swiper(".mySwiper", {
     },
     */
 });
+
+// FORMULARIO DE CONFIRMACION DE ASISTENCIA
+
+const URLform = 'https://script.google.com/macros/s/AKfycbyj0ovQnWtfh48dtYiw4mEdKaaw9DOkDieVhHvUf2LhPPfgi809MPahegndfeQFFYJcaw/exec';
+
+const form = document.forms['confirmacion-formulario'];
+const dialog = document.getElementById('confirmacion-dialog');
+const dialogError = document.getElementById('error-dialog');
+const recargar = document.querySelector('.recargar');
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(URLform, { method: 'POST', body: new FormData(form) })
+        .then(response => dialog.showModal())
+        .then(() => recargar.addEventListener('click', () => {
+            window.location.reload()
+        }))
+        .catch(error => dialogError.showModal())
+})

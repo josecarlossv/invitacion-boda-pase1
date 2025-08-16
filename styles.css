@@ -759,6 +759,18 @@ textarea {
     font-size: medium;
 }
 
+dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    ;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
 
 .ultima-imagen img {
