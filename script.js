@@ -128,3 +128,8 @@ form.addEventListener('submit', e => {
         }))
         .catch(error => dialogError.showModal())
 })
+
+/*ANIMACIONES EN MAIN*/
+
+/*Sección intro*/
+
