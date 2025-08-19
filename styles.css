@@ -177,6 +177,7 @@ h2 {
     margin-top: 10%;
     margin-right: 5%;
     margin-left: 5%;
+    scale: 0.8;
 }
 
 .title {
@@ -232,7 +233,6 @@ button:hover {
     margin-top: 5%;
     margin-left: 0px;
     margin-bottom: 0px;
-    ;
 }
 
 .fecha-derecha-dia {

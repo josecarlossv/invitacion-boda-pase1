@@ -8,8 +8,9 @@
         @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Felipa&family=Great+Vibes&family=Gwendolyn:wght@400;700&family=Imbue:opsz,wght@10..100,100..900&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lugrasimo&family=Luxurious+Script&family=Monomakh&family=Oleo+Script+Swash+Caps:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Romanesco&family=Rouge+Script&family=Trocchi&display=swap');
     </style>
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Karina & Marco - Invitación</title>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
 
 </head>
 
@@ -32,15 +33,15 @@
     <main>
         <section class="intro">
             <audio autoplay loop>
-                <source src="./Until I Found You - Stephen Sanchez - Cover (Violin).mp3">
+                <!-- <source src="./Until I Found You - Stephen Sanchez - Cover (Violin).mp3"> -->
 
             </audio>
             <p class="parrafo">Porque forman parte importante de nuestra vida, deseamos que compartan con nosotros la
                 alegría de nuestra
                 unión.
             </p>
-            <h3>CON LA BENDICIÓN DE DIOS Y DE NUESTROS PADRES:</h3>
-            <div class="names">
+            <h3 class="bendicion">CON LA BENDICIÓN DE DIOS Y DE NUESTROS PADRES:</h3>
+            <div class="names names-padres">
                 <h4>Karina Espinoza Romero</h4>
                 <h4>María Idalia Cota Soto</h4>
                 <h4>Luis Hernán Romero López</h4>
@@ -51,13 +52,13 @@
 
             </div>
             <h3>Y en compañía de nuestros padrinos de velación:</h3>
-            <div class="names">
+            <div class="names names-padrinos">
                 <h4>Jessica Espinoza Romero</h4>
                 <h4>Gloría Bojórquez Gil</h4>
                 <h4>Manuel Espinoza Romero</h4>
                 <h4>Fernando Castro Molina</h4>
             </div>
-            <p class="parrafo">Tenemos el honor de invitarlos a nuestro matrimonio que se llevará a
+            <p class="parrafo parrafo-padrinos">Tenemos el honor de invitarlos a nuestro matrimonio que se llevará a
                 cabo el día</p>
         </section>
         <section class="fecha">
@@ -229,7 +230,7 @@
             -->
             <div class="swiper-pagination"></div>
         </div>
-        <seccion class="confirmacion">
+        <section class="confirmacion">
             <h2 class="title">CONFIRMACIÓN</h2>
 
             <p> Agradecemos confirmar su asistencia antes del 5 de noviembre
@@ -240,7 +241,7 @@
                 momento sin niños. ¡Agradecemos su comprensión!
             </p>
 
-            <form class="confirmacion-formulario" method="post" action="" name="confirmacion-formulario">
+            <form class="confirmacion-formulario" method="post" name="confirmacion-formulario">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre..." required>
 
@@ -272,14 +273,14 @@
                 <h3>Error</h3>
                 <p>Error al enviar el formulario. Por favor, intentalo más tarde</p>
                 <form method="dialog">
-                    <buttton>Cerrar</buttton>
+                    <button>Cerrar</button>
                 </form>
             </dialog>
 
             <div class="ultima-imagen">
                 <img src="./fotos/04.jpg">
             </div>
-        </seccion>
+        </section>
     </main>
     <footer>
 

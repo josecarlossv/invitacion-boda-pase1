@@ -19,6 +19,9 @@ gsap.registerEffect({
     extendTimeline: true,
 });
 
+// REGISTRAR PLUGIN SCROLL
+gsap.registerPlugin(ScrollTrigger);
+
 // ANIMACIÓN PARA LA CARTA
 document.addEventListener('DOMContentLoaded', () => {
     const botonCarta = document.querySelector('.carta-boton');
@@ -38,9 +41,53 @@ document.addEventListener('DOMContentLoaded', () => {
 
         gsap.effects.fadeIn(imagenInicial);
 
-        setTimeout(() => {
-            document.querySelector('main').style.display = 'flex';
-        }, 500);
+        document.querySelector('main').style.display = 'flex';
+
+        /*SECCION INTRO*/
+        gsap.from(".bendicion", {
+            scrollTrigger: {
+                trigger: ".bendicion",
+                start: "top 95%",
+            },
+            x: -500,
+            duration: 1.5
+        });
+
+        gsap.from(".names-padres", {
+            scrollTrigger: {
+                trigger: ".names-padres",
+                start: "-125px bottom",
+            },
+            y: 200,
+            duration: 1
+        });
+
+        gsap.to(".novios > img", {
+            scale: 1,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".novios > img",
+                start: "top 95%",
+            },
+        });
+
+        gsap.from(".names-padrinos, .parrafo-padrinos", {
+            scrollTrigger: {
+                trigger: ".names-padrinos, .parrafo-padrinos",
+                start: "-125px bottom",
+            },
+            y: 200,
+            duration: 1
+        });
+
+        gsap.from(".fecha-derecha, .fecha-izquierda", {
+            opacity: 0,
+            duration: 3,
+            scrollTrigger: {
+                trigger: ".fecha",
+                start: "top 95%",
+            },
+        });
 
     });
 });
@@ -129,7 +176,4 @@ form.addEventListener('submit', e => {
         .catch(error => dialogError.showModal())
 })
 
-/*ANIMACIONES EN MAIN*/
-
-/*Sección intro*/
 
