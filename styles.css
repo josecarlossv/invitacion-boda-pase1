@@ -779,8 +779,11 @@ dialog::backdrop {
     width: 100%;
     filter: grayscale(100%)
 }
-
-
+.iniciales img{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
 /* ESTILOS PARA LA CARTA DISPOSITIVO ESCRITORIO (PANTALLA INICIAL) */
 
@@ -854,5 +857,5 @@ dialog::backdrop {
         object-fit: cover;
         width: 70px;
     }
-
+    
 }
