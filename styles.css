@@ -269,6 +269,7 @@ button:hover {
     margin-top: 50%;
 }
 
+
 /*ESTILOS SECCIÓN UBICACIONES*/
 
 
@@ -779,10 +780,26 @@ dialog::backdrop {
     width: 100%;
     filter: grayscale(100%)
 }
-.iniciales img{
+
+.iniciales img {
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
+}
+
+footer {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: black;
+    height: 150px;
+}
+
+footer p {
+    color: white;
+    font-size: 12px;
 }
 
 /* ESTILOS PARA LA CARTA DISPOSITIVO ESCRITORIO (PANTALLA INICIAL) */
@@ -855,7 +872,12 @@ dialog::backdrop {
 
     .carta-boton img {
         object-fit: cover;
-        width: 70px;
+        width: 150px;
     }
-    
+
+    main {
+        max-width: 375px;
+        margin: auto;
+    }
+
 }

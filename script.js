@@ -42,6 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
         gsap.effects.fadeIn(imagenInicial);
 
         document.querySelector('main').style.display = 'flex';
+        document.querySelector('footer').style.display = 'flex';
+
 
         /*SECCION INTRO*/
         gsap.from(".bendicion", {
