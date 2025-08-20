@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gsap.from(".bendicion", {
             scrollTrigger: {
                 trigger: ".bendicion",
-                start: "top 95%",
+                start: "center 95%",
             },
             x: -500,
             duration: 1.5
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: 1,
             scrollTrigger: {
                 trigger: ".novios > img",
-                start: "top 95%",
+                start: "center 95%",
             },
         });
 
@@ -80,13 +80,163 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: 1
         });
 
+        // SECCION FECHA
         gsap.from(".fecha-derecha, .fecha-izquierda", {
             opacity: 0,
             duration: 3,
             scrollTrigger: {
                 trigger: ".fecha",
+                start: "center 95%",
+            },
+        });
+
+        // SECCION UBICACIONES DE CEREMONIA
+        gsap.from(".ubicaciones-ceremonia > .title-ceremonia", {
+            scrollTrigger: {
+                trigger: ".ubicaciones-ceremonia > .title-ceremonia",
+                start: "top bottom",
+            },
+            x: -500,
+            duration: 1.5
+        });
+
+        gsap.from(".ubicaciones-ceremonia > .ubicaciones-ceremonia-lugar", {
+            scrollTrigger: {
+                trigger: ".ubicaciones-ceremonia > .ubicaciones-ceremonia-lugar",
+                start: "top bottom",
+            },
+            x: -500,
+            duration: 1.5
+        });
+
+        gsap.from(".ubicaciones-ceremonia > .ubicaciones-ceremonia-hora", {
+            scrollTrigger: {
+                trigger: ".ubicaciones-ceremonia > .ubicaciones-ceremonia-hora",
+                start: "top bottom",
+            },
+            x: -500,
+            duration: 1.5
+        });
+
+        gsap.from(".ubicaciones-ceremonia > .ubicaciones-ceremonia-direccion", {
+            scrollTrigger: {
+                trigger: ".ubicaciones-ceremonia > .ubicaciones-ceremonia-direccion",
+                start: "top bottom",
+            },
+            x: -500,
+            duration: 1.5
+        });
+
+        gsap.from(".ubicaciones-ceremonia > a > button", {
+            scrollTrigger: {
+                trigger: ".ubicaciones-ceremonia > a > button",
+                start: "-125px bottom",
+            },
+            y: 150,
+            duration: 1
+        });
+
+
+        // SECCION UBICACIONES DE RECEPCIÓN
+        gsap.from(".ubicaciones-recepcion > .title-recepcion", {
+            scrollTrigger: {
+                trigger: ".ubicaciones-recepcion > .title-recepcion",
+                start: "top bottom",
+            },
+            x: -500,
+            duration: 1.5
+        });
+
+        gsap.from(".ubicaciones-recepcion > .ubicaciones-recepcion-lugar", {
+            scrollTrigger: {
+                trigger: ".ubicaciones-recepcion > .ubicaciones-recepcion-lugar",
+                start: "top bottom",
+            },
+            x: -500,
+            duration: 1.5
+        });
+
+        gsap.from(".ubicaciones-recepcion > .ubicaciones-recepcion-hora", {
+            scrollTrigger: {
+                trigger: ".ubicaciones-recepcion > .ubicaciones-recepcion-hora",
+                start: "top bottom",
+            },
+            x: -500,
+            duration: 1.5
+        });
+
+        gsap.from(".ubicaciones-recepcion > .ubicaciones-recepcion-direccion", {
+            scrollTrigger: {
+                trigger: ".ubicaciones-recepcion > .ubicaciones-recepcion-direccion",
+                start: "top bottom",
+            },
+            x: -500,
+            duration: 1.5
+        });
+
+        gsap.from(".ubicaciones-recepcion > a > button", {
+            scrollTrigger: {
+                trigger: ".ubicaciones-recepcion > a > button",
+                start: "-125px bottom",
+            },
+            y: 150,
+            duration: 1
+        });
+
+        // SECCION ITINERARIO
+        gsap.from(".title-itinerario", {
+            scrollTrigger: {
+                trigger: ".title-itinerario",
+                start: "top bottom",
+            },
+            x: -500,
+            duration: 1.5
+        });
+
+        gsap.from(".itinerario", {
+            scrollTrigger: {
+                trigger: ".itinerario",
+                start: "-125px bottom",
+            },
+            y: 300,
+            duration: 1.5
+        });
+
+        // SECCION CODIGO DE VESTIMENTA Y DETALLES
+        gsap.from(".detalles-vestimenta > .title-2", {
+            scrollTrigger: {
+                trigger: ".detalles-vestimenta > .title-2",
+                start: "top bottom",
+            },
+            x: -500,
+            duration: 1.5
+        });
+
+        gsap.from(".detalles-vestimenta > img", {
+            opacity: 0,
+            duration: 7,
+            scrollTrigger: {
+                trigger: ".detalles-vestimenta > img",
                 start: "top 95%",
             },
+        });
+
+        gsap.from(".detalles-vestimenta-parrafo", {
+            scrollTrigger: {
+                trigger: ".detalles-vestimenta-parrafo",
+                start: "-125px bottom",
+            },
+            y: 200,
+            duration: 1
+        });
+
+        gsap.from(".detalles-regalos", {
+            scrollTrigger: {
+                trigger: ".detalles-regalos",
+                start: "-125px bottom",
+            },
+            y: 300,
+            duration: 1.5
         });
 
     });
