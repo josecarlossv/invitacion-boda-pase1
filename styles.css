@@ -136,7 +136,7 @@ h4 {
     margin-right: 5%;
     margin-bottom: 0%;
     font-family: "serif-parrafo-italic", serif;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 200;
     letter-spacing: 1.5px;
 
@@ -229,20 +229,20 @@ button:hover {
 }
 
 .fecha-derecha-mes {
-    font-size: 23px;
+    font-size: 28px;
     margin-top: 5%;
     margin-left: 0px;
     margin-bottom: 0px;
 }
 
 .fecha-derecha-dia {
-    font-size: 60px;
+    font-size: 70px;
     margin-top: 0%;
     margin-bottom: 2%;
 }
 
 .fecha-derecha-año {
-    font-size: 25px;
+    font-size: 35px;
     margin-top: 5%
 }
 
@@ -264,7 +264,7 @@ button:hover {
 }
 
 .fecha-izquierda-hora {
-    font-size: 50px;
+    font-size: 60px;
     margin-bottom: 1%;
     margin-top: 50%;
 }
