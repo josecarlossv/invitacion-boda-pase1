@@ -26,10 +26,12 @@ gsap.registerPlugin(ScrollTrigger);
 document.addEventListener('DOMContentLoaded', () => {
     const botonCarta = document.querySelector('.carta-boton');
     const imagenInicial = document.querySelector('.carta-imagen-inicial');
+    const audio = document.getElementById('audio');
 
     botonCarta.addEventListener('click', () => {
         document.body.style.overflow = 'auto';
         gsap.effects.fade(botonCarta);
+        audio.play();
 
         if (screen.width > 601) {
             gsap.to(".carta-sobre-derecha", { x: 1000, duration: 2.5 });
