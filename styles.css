@@ -136,7 +136,7 @@ h4 {
     margin-right: 5%;
     margin-bottom: 0%;
     font-family: "serif-parrafo-italic", serif;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 200;
     letter-spacing: 1.5px;
 
@@ -169,6 +169,7 @@ h2 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     justify-content: space-between;
+    text-wrap: nowrap;
     padding: 0px;
 }
 
@@ -602,6 +603,11 @@ button:hover {
 
 .enfasis {
     font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.pase {
+    font-size: 30px;
     letter-spacing: 3px;
 }
 
