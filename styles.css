@@ -601,6 +601,16 @@ button:hover {
 
 }
 
+.confirmacion-pase {
+    display: flex;
+    justify-content: center;
+}
+
+.confirmacion img {
+    width: 50px;
+    filter: brightness(0%);
+}
+
 .enfasis {
     font-size: 25px;
     letter-spacing: 3px;
